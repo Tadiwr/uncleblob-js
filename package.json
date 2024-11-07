@@ -1,6 +1,6 @@
 {
   "name": "uncleblob-js",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A javascript and typescript library to interact with the uncle blob object store",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
