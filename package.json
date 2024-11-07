@@ -1,12 +1,18 @@
 {
   "name": "uncleblob-js",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A javascript and typescript library to interact with the uncle blob object store",
   "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+      "dist"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npx tsc ",
-    "dev": "npx tsc && node ."
+    "build": "tsup",
+    "dev": "pnpm build && node .",
+    "publish": "tsup && pnpm publish"
   },
   "keywords": ["uncleblob", "object store", "blob", "file storage"],
   "author": "Tadiwanashe Shangwa",
